@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Valid Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-21T23:52:01" hostname="DESKTOP-F4KJESH" time="11.873">
+  <properties/>
+  <testcase name="Login as valid user" classname="Valid Login" time="11.873">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_valid_user(StepDefinitions.java:141)
+	at ✽.I login as a valid user(io/cucumber/features/ValidLogin.feature:5)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Login as valid user
+]]></system-out>
+  <system-err><![CDATA[Dec 22, 2021 5:22:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

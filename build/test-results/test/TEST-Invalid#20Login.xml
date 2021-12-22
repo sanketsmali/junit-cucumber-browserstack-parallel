@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Invalid Login" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-12-21T22:13:12" hostname="DESKTOP-F4KJESH" time="13.064">
+  <properties/>
+  <testcase name="Login as invalid user" classname="Invalid Login" time="13.064">
+    <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_invalid_user(StepDefinitions.java:146)
+	at ✽.I login as an invalid user(io/cucumber/features/InvalidLogin.feature:5)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Login as invalid user
+]]></system-out>
+  <system-err><![CDATA[Dec 22, 2021 3:43:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

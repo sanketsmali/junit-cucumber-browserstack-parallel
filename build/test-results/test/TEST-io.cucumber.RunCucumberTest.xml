@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.cucumber.RunCucumberTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-F4KJESH" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: Add Item To Cart
+
+  Scenario: Adding one item to a cart ?[90m# io/cucumber/features/AddItem.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI am on the inventory page?[0m  ?[90m# StepDefinitions.go_to_the_inventory_page()?[0m
+    ?[31mWhen ?[0m?[31mI add ?[0m?[31m?[1m1?[0m?[31m item to the cart?[0m     ?[90m# StepDefinitions.add_items_to_cart(int)?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6140, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 7081d986085351ddda2ae347822...}
+Session ID: 7081d986085351ddda2ae34782265261efb2de72
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 1 item to the cart(io/cucumber/features/AddItem.feature:5)
+?[0m
+    ?[33mThen ?[0m?[33mI have 1 item in my cart?[0m     ?[90m# null?[0m
+
+  Scenario: Adding two items to a cart ?[90m# io/cucumber/features/AddItem.feature:8?[0m
+    ?[32mGiven ?[0m?[32mI am on the inventory page?[0m   ?[90m# StepDefinitions.go_to_the_inventory_page()?[0m
+    ?[31mWhen ?[0m?[31mI add ?[0m?[31m?[1m2?[0m?[31m item to the cart?[0m      ?[90m# StepDefinitions.add_items_to_cart(int)?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 7412, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 995512bb7451cd4b3d745d07521...}
+Session ID: 995512bb7451cd4b3d745d07521080698ba271cb
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 2 item to the cart(io/cucumber/features/AddItem.feature:10)
+?[0m
+    ?[33mThen ?[0m?[33mI have 2 items in my cart?[0m     ?[90m# null?[0m
+
+Feature: Invalid Login
+
+  Scenario: Login as invalid user       ?[90m# io/cucumber/features/InvalidLogin.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI go to the login page?[0m        ?[90m# StepDefinitions.go_to_login_page()?[0m
+    ?[31mWhen ?[0m?[31mI login as an invalid user?[0m     ?[90m# StepDefinitions.login_as_invalid_user()?[0m
+      ?[31mjava.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_invalid_user(StepDefinitions.java:146)
+	at ?.I login as an invalid user(io/cucumber/features/InvalidLogin.feature:5)
+?[0m
+    ?[36mThen ?[0m?[36mThe item list is not displayed?[0m ?[90m# StepDefinitions.item_list_is_not_diplayed()?[0m
+
+Feature: Remove Item from Cart
+
+  Scenario: Removing one item from cart ?[90m# io/cucumber/features/RemoveItem.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI am on the inventory page?[0m    ?[90m# StepDefinitions.go_to_the_inventory_page()?[0m
+    ?[31mWhen ?[0m?[31mI add ?[0m?[31m?[1m2?[0m?[31m items to the cart?[0m      ?[90m# StepDefinitions.add_items_to_cart(int)?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 2540, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ba04bc6afae686e8f5eb4c42be2...}
+Session ID: ba04bc6afae686e8f5eb4c42be228db53776ef17
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 2 items to the cart(io/cucumber/features/RemoveItem.feature:5)
+?[0m
+    ?[36mAnd ?[0m?[36mI remove an item?[0m                ?[90m# StepDefinitions.remove_an_item()?[0m
+    ?[33mThen ?[0m?[33mI have 1 item in my cart?[0m       ?[90m# null?[0m
+
+  Scenario: Removing all items from cart ?[90m# io/cucumber/features/RemoveItem.feature:9?[0m
+    ?[32mGiven ?[0m?[32mI am on the inventory page?[0m     ?[90m# StepDefinitions.go_to_the_inventory_page()?[0m
+    ?[31mWhen ?[0m?[31mI add ?[0m?[31m?[1m1?[0m?[31m items to the cart?[0m       ?[90m# StepDefinitions.add_items_to_cart(int)?[0m
+      ?[31morg.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9776, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: e0d4bd2116dc56d2006c30c2857...}
+Session ID: e0d4bd2116dc56d2006c30c285767ab4e52035f8
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 1 items to the cart(io/cucumber/features/RemoveItem.feature:11)
+?[0m
+    ?[36mAnd ?[0m?[36mI remove an item?[0m                 ?[90m# StepDefinitions.remove_an_item()?[0m
+    ?[33mThen ?[0m?[33mI have 0 items in my cart?[0m       ?[90m# null?[0m
+
+Feature: Valid Login
+
+  Scenario: Login as valid user     ?[90m# io/cucumber/features/ValidLogin.feature:3?[0m
+    ?[32mGiven ?[0m?[32mI go to the login page?[0m    ?[90m# StepDefinitions.go_to_login_page()?[0m
+    ?[31mWhen ?[0m?[31mI login as a valid user?[0m    ?[90m# StepDefinitions.login_as_valid_user()?[0m
+      ?[31mjava.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_valid_user(StepDefinitions.java:141)
+	at ?.I login as a valid user(io/cucumber/features/ValidLogin.feature:5)
+?[0m
+    ?[36mThen ?[0m?[36mThe item list is displayed?[0m ?[90m# StepDefinitions.item_list_is_diplayed()?[0m
+
+?[31mFailed scenarios:?[0m
+?[31mio/cucumber/features/AddItem.feature:3 ?[0m# Adding one item to a cart
+?[31mio/cucumber/features/AddItem.feature:8 ?[0m# Adding two items to a cart
+?[31mio/cucumber/features/InvalidLogin.feature:3 ?[0m# Login as invalid user
+?[31mio/cucumber/features/RemoveItem.feature:3 ?[0m# Removing one item from cart
+?[31mio/cucumber/features/RemoveItem.feature:9 ?[0m# Removing all items from cart
+?[31mio/cucumber/features/ValidLogin.feature:3 ?[0m# Login as valid user
+
+6 Scenarios (?[31m6 failed?[0m)
+20 Steps (?[31m6 failed?[0m, ?[36m4 skipped?[0m, ?[33m4 undefined?[0m, ?[32m6 passed?[0m)
+1m28.853s
+
+org.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 6140, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 7081d986085351ddda2ae347822...}
+Session ID: 7081d986085351ddda2ae34782265261efb2de72
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 1 item to the cart(io/cucumber/features/AddItem.feature:5)
+
+org.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 7412, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 995512bb7451cd4b3d745d07521...}
+Session ID: 995512bb7451cd4b3d745d07521080698ba271cb
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 2 item to the cart(io/cucumber/features/AddItem.feature:10)
+
+java.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_invalid_user(StepDefinitions.java:146)
+	at ?.I login as an invalid user(io/cucumber/features/InvalidLogin.feature:5)
+
+org.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 2540, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ba04bc6afae686e8f5eb4c42be2...}
+Session ID: ba04bc6afae686e8f5eb4c42be228db53776ef17
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 2 items to the cart(io/cucumber/features/RemoveItem.feature:5)
+
+org.openqa.selenium.NoSuchElementException: Unable to locate element: .btn_primary
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-F4KJESH', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211129150630, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 9776, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: e0d4bd2116dc56d2006c30c2857...}
+Session ID: e0d4bd2116dc56d2006c30c285767ab4e52035f8
+*** Element info: {Using=class name, value=btn_primary}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.cucumber.StepDefinitions.lambda$add_items_to_cart$0(StepDefinitions.java:170)
+	at java.util.stream.Streams$RangeIntSpliterator.forEachRemaining(Streams.java:110)
+	at java.util.stream.IntPipeline$Head.forEach(IntPipeline.java:559)
+	at io.cucumber.StepDefinitions.add_items_to_cart(StepDefinitions.java:169)
+	at ?.I add 1 items to the cart(io/cucumber/features/RemoveItem.feature:11)
+
+java.lang.NullPointerException
+	at io.cucumber.StepDefinitions.login(StepDefinitions.java:156)
+	at io.cucumber.StepDefinitions.login_as_valid_user(StepDefinitions.java:141)
+	at ?.I login as a valid user(io/cucumber/features/ValidLogin.feature:5)
+
+
+You can implement missing steps with the snippets below:
+
+@Then("I have {int} item in my cart")
+public void i_have_item_in_my_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("I have {int} items in my cart")
+public void i_have_items_in_my_cart(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
